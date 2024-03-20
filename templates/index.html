@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to DevOps Masters Program Class of 2024A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #0056b3;
+        }
+        h2 {
+            color: #009933;
+            margin-top: 30px;
+        }
+        .team-member {
+            display: inline-block;
+            margin: 20px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #009933;
+        }
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: none;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .name {
+            margin-top: 5px;
+            font-weight: bold;
+            color: #009933;
+        }
+        .title {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the DevOps Masters Program Class of 2024A</h1>
+        <p>This program provides comprehensive training in DevOps methodologies, tools, and practices, empowering you to excel in today's fast-paced IT industry.</p>
+        <h2>Management Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='ceo.jpg') }}" alt="CEO Image">
+                <p class="name">John Doe</p>
+                <p class="title">CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='tutor1.jpg') }}" alt="Tutor 1 Image">
+                <p class="name">Jane Smith</p>
+                <p class="title">DevOps Expert</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='tutor2.jpg') }}" alt="Tutor 2 Image">
+                <p class="name">David Johnson</p>
+                <p class="title">DevOps Instructor</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

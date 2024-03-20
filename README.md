@@ -100,5 +100,16 @@ To run the application on your Ubuntu server, follow these steps:
 
 ## Accessing the Application in the Browser
 
-Once the application is running, open your web browser and go to:
+Once the application is running, open your web browser and go to:  http://<your_server_ip>:5000
+
+Replace `<your_server_ip>` with the public IP address or domain name of your Ubuntu server. This will display the web application, welcoming users to the DevOps Masters Program Class of 2024A and showcasing the management team.
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or create a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 

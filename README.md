@@ -26,7 +26,7 @@ To install the required dependencies, follow these steps:
 1. Clone this repository to your Ubuntu server:
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/CHAFAH/JavaApp.git
     ```
 
 2. Navigate to the project directory:

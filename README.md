@@ -32,7 +32,7 @@ To install the required dependencies, follow these steps:
 2. Navigate to the project directory:
 
     ```bash
-    cd <project_directory>
+    cd JavaApp
     ```
 
 3. Set up a virtual environment to isolate dependencies (optional but recommended):
@@ -48,11 +48,43 @@ To install the required dependencies, follow these steps:
     source venv/bin/activate
     ```
 
-4. Install the required dependencies using pip:
+4. Install Flask:
 
     ```bash
-    pip install -r requirements.txt
+    pip install Flask
     ```
+
+    This command will install Flask, the web framework used by the application.
+
+5. Redirect to `requirements.txt`:
+
+    ```bash
+    cd ..
+    ```
+
+6. Install the required dependencies using pip:
+
+    ```bash
+    pip install -r JavaApp/requirements.txt
+    ```
+
+    This command will install all the necessary dependencies listed in the `requirements.txt` file.
+
+## Generating requirements.txt
+
+To generate the `requirements.txt` file, follow these steps:
+
+1. Make sure you're in the project directory and your virtual environment is activated.
+
+2. Install all the required dependencies using pip.
+
+3. Once all dependencies are installed, generate the `requirements.txt` file using `pip freeze`:
+
+    ```bash
+    pip freeze > requirements.txt
+    ```
+
+    This command will create a `requirements.txt` file containing a list of all installed packages and their versions.
 
 ## Running the Application
 

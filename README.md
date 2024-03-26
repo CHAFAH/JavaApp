@@ -56,20 +56,6 @@ To install the required dependencies, follow these steps:
 
     This command will install Flask, the web framework used by the application.
 
-5. Redirect to `requirements.txt`:
-
-    ```bash
-    cd ..
-    ```
-
-6. Install the required dependencies using pip:
-
-    ```bash
-    pip install -r JavaApp/requirements.txt
-    ```
-
-    This command will install all the necessary dependencies listed in the `requirements.txt` file.
-
 ## Generating requirements.txt
 
 To generate the `requirements.txt` file, follow these steps:
@@ -81,6 +67,7 @@ To generate the `requirements.txt` file, follow these steps:
 3. Once all dependencies are installed, generate the `requirements.txt` file using `pip freeze`:
 
     ```bash
+    touch requirements.txt
     pip freeze > requirements.txt
     ```
 

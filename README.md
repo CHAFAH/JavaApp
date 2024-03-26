@@ -2,94 +2,84 @@
 
 This web application displays a webpage welcoming users to the DevOps Masters Program Class of 2024A and showcases the management team.
 
-## Prerequisites
 
-Before you begin, ensure you have the following installed:
+Sure, here are the installation steps for the application along with running it:
 
-- Python 3:
+### Installation Steps:
 
-    ```bash
-    sudo apt update
-    sudo apt install python3
-    ```
+1. **Update and Install Python 3:**
+   ```bash
+   sudo apt update
+   sudo apt install python3
+   ```
 
-- pip: The Python package installer (usually installed with Python)
+2. **Install pip (Python Package Installer):**
+   ```bash
+   sudo apt install python3-pip
+   ```
 
-    ```bash
-    sudo apt install python3-pip
-    ```
+3. **Install Python Virtual Environment (optional but recommended):**
+   ```bash
+   sudo apt install python3-venv
+   ```
 
-## Installation
+4. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/CHAFAH/JavaApp.git
+   ```
 
-To install the required dependencies, follow these steps:
+5. **Navigate to the Project Directory:**
+   ```bash
+   cd JavaApp
+   ```
 
-1. Clone this repository to your Ubuntu server:
+6. **Set Up a Virtual Environment (optional but recommended):**
+   ```bash
+   python3 -m venv venv
+   ```
 
-    ```bash
-    git clone https://github.com/CHAFAH/JavaApp.git
-    ```
+7. **Activate the Virtual Environment:**
+   ```bash
+   source venv/bin/activate
+   ```
 
-2. Navigate to the project directory:
+8. **Install Flask:**
+   ```bash
+   pip install Flask
+   ```
 
-    ```bash
-    cd JavaApp
-    ```
+9. **Generate requirements.txt:**
+   ```bash
+   touch requirements.txt
+   pip freeze > requirements.txt
+   ```
 
-3. Set up a virtual environment to isolate dependencies (optional but recommended):
+### Running the Application:
 
-    ```bash
-    sudo apt install python3-venv
-    python3 -m venv venv
-    ```
+1. **Make Sure You're in the Project Directory:**
+   ```bash
+   cd JavaApp
+   ```
 
-    Activate the virtual environment:
+2. **Activate the Virtual Environment (if not already activated):**
+   ```bash
+   source venv/bin/activate
+   ```
 
-    ```bash
-    source venv/bin/activate
-    ```
+3. **Run the Flask Application:**
+   ```bash
+   python app.py
+   ```
 
-4. Install Flask:
+### Accessing the Application:
 
-    ```bash
-    pip install Flask
-    ```
-
-    This command will install Flask, the web framework used by the application.
-
-## Generating requirements.txt
-
-To generate the `requirements.txt` file, follow these steps:
-
-1. Make sure you're in the project directory and your virtual environment is activated.
-
-2. Install all the required dependencies using pip.
-
-3. Once all dependencies are installed, generate the `requirements.txt` file using `pip freeze`:
-
-    ```bash
-    touch requirements.txt
-    pip freeze > requirements.txt
-    ```
-
-    This command will create a `requirements.txt` file containing a list of all installed packages and their versions.
-
-## Running the Application
-
-To run the application on your Ubuntu server, follow these steps:
-
-1. Make sure you're in the project directory.
-
-2. Run the Flask application:
-
-    ```bash
-    python app.py
-    ```
-
-## Accessing the Application in the Browser
-
-Once the application is running, open your web browser and go to:  http://<your_server_ip>:5000
-
-Replace `<your_server_ip>` with the public IP address or domain name of your Ubuntu server. This will display the web application, welcoming users to the DevOps Masters Program Class of 2024A and showcasing the management team.
+1. Once the application is running, open your web browser.
+2. Enter the following URL, replacing `<your_server_ip>` with the public IP address or domain name of your Ubuntu server:
+   ```
+   http://<your_server_ip>:5000
+   ```
+   
+   This will display the web application, welcoming users to the DevOps Masters Program Class of 2024A and showcasing the management team.
 
 ## Contributing
 
